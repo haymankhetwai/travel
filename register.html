@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+
+</head>
+<body class="bg-blue-200">
+    <main class="bg-white w-1/3 mx-auto mt-10 space-y-8 p-8 rounded-2xl"> 
+        <div class="w-full flex justify-center ">
+            <img src="add-user.png" alt="profile" class="w-12 p-2  rounded-xl bg-indigo-50 object-contain">
+        </div>
+        <div class="text-center">
+            <h1 class="text-3xl font-extrabold mb-2">Create Account</h1>
+            <p class="text-slate-500">Join us today!It only takes a minute.</p>
+        </div>
+        <form class="space-y-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 ">
+                <div class="flex flex-col gap-2">
+                    <label for="userInput" class="text-medium text-slate-600 font-bold ">Full Name</label>
+                    <input type="text" id="userInput" placeholder="John Doe" class="w-full border rounded-lg px-4 py-2  bg-slate-100 outline-none">
+                </div>
+                <div class="flex flex-col gap-2">
+                    <label for="emailInput" class="text-medium text-slate-600 font-bold">Email Address</label>
+                    <input type="email" id="emailInput" placeholder="name@company.com" class="w-full border rounded-lg px-4 py-2 bg-slate-100 outline-none">
+                </div>
+            </div>
+            <div class="flex flex-col gap-2">
+                <label for="password" class="text-medium text-slate-600 font-bold">Password</label>
+                <input type="password" id="password" placeholder="........" class="w-full border rounded-lg px-4 py-2  bg-slate-100 text-slate-600  outline-none"> 
+            </div>
+            <div class="flex flex-col gap-2">
+                <label for="confirmPw" class="text-medium text-slate-600 font-bold">Confirm Password</label>
+                <input type="password" id="confirmPw" placeholder="........" class="w-full border rounded-lg px-4 py-2 bg-slate-100 text-slate-600  outline-none">
+            </div>
+            <div class="flex items-center gap-2">
+                <input type="checkbox" class="w-4 h-4">
+                <p>
+                    I agree to the <a href="" class="text-purple-500 font-medium underline">Terms of Service</a> and <a class="text-purple-500 font-medium underline">Privacy Policy.</a>
+                </p>
+            </div>
+            <div class="w-full px-4 py-3 bg-purple-800 rounded-lg text-white text-medium font-bold text-center hover:bg-purple-700 shadow-md shadow-indigo-400 transition duration-500 ease-in-out">
+                <button>Create My Account >></button>
+            </div>
+
+        </form>
+            <div class="text-center">
+                <p>Already have an account? <a href="login.html" class="text-purple-700 font-bold">Sign in here</a></p>
+            </div>
+        
+    </main>
+</body>
+</html>

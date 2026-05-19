@@ -23,9 +23,9 @@
     </script>
 
   </head>
-  <body class="bg-slate-200 ">
+  <body class="bg-white ">
     <section
-      class="relative bg-slate-100 mx-auto mt-0 sm:px-12 md:px-20 space-y-12 md:space-y-20 w-full max-w-6xl min-h-screen "
+      class="relative bg-white mx-auto mt-0 sm:px-12 md:px-20 space-y-12 md:space-y-20 w-full max-w-6xl min-h-screen "
     >
       <img
         src="images/Decore.png"
@@ -33,20 +33,20 @@
         class="absolute top-0 right-0 z-0 w-[50%] md:w-[45%] h-auto"
       />
       <!-- header -->
-       <nav class="sticky top-0 z-50 py-3 pl-3 pr-3 flex justify-between items-center !mt-0">
+       <nav class="sticky top-0 z-50 bg-[#FFF1DA] py-3 pl-3 pr-3 flex justify-between items-center !mt-0">
         <!-- relative z-10 -->
          <div class="flex items-center h-10 shrink-0 ">
           <img src="images/Logo.png" alt="Jadoo" class="w-20" />
          </div>
         
          <!-- Desktop Menu -->
-        <div class="hidden md:flex items-center  md:gap-x-3 lg:gap-x-8 text-slate-700 font-medium medium:text-xs lg:text-base">
+        <div class="hidden lg:flex items-center  md:gap-x-3 lg:gap-x-8 text-slate-700 font-medium medium:text-xs lg:text-base">
           <a href="" class="leading-none">Destinations</a>
           <a href="" class="leading-none">Hotels</a>
           <a href="" class="leading-none">Flights</a>
           <a href="" class="leading-none">Bookings</a>
           <a href="" class="leading-none">Login</a>
-          <button class="inline-flex items-center justify-center border border-slate-700 rounded-md md:px-2.5 md:py-1 lg:px-4 lg:py-1.5 md:text-xs lg:text-sm  font-medium leading-none hover:bg-slate-900 hover:text-white hover:border-transparent transition duration-300 h-10">Sign up</button>
+          <a href="register.html" class="inline-flex items-center justify-center border border-slate-700 rounded-md md:px-2.5 md:py-1 lg:px-4 lg:py-1.5 md:text-xs lg:text-sm  font-medium leading-none hover:bg-slate-900 hover:text-white hover:border-transparent transition duration-300 h-10">Sign up</a>
           <div class="inline-flex items-center h-10">
             <select class="bg-transparent text-sm  font-medium h-10 outline-none">
             <option value="EN">EN</option>
@@ -54,13 +54,13 @@
           </div>
           </div>
 
-           <button id="menuBtn" class="md:hidden text-white bg-slate-300 text-3xl ">
+           <button id="menuBtn" class="lg:hidden text-white bg-slate-300 text-3xl ">
             <span id="icon" class="hover:bg-yellow-400 transition duration-700 ease-in-out">☰</span>
           </button>
 
           <!-- Mobile Menu -->
           <div id="mobileMenu"
-       class="hidden absolute top-full left-0 w-full bg-yellow-400 shadow-lg flex-col justify-center items-center gap-4 p-5 md:hidden text-slate-700 font-medium">
+       class="hidden absolute top-full left-0 w-full bg-yellow-400 shadow-lg flex-col justify-center items-center gap-4 p-5 lg:hidden text-slate-700 font-medium">
 
     <a href="#">Destinations</a>
     <a href="#">Hotels</a>
@@ -68,9 +68,9 @@
     <a href="#">Bookings</a>
     <a href="#">Login</a>
 
-    <button class="border border-slate-700 rounded-md px-4 py-2 w-fit">
+    <a href="register.html" class="border border-slate-700 rounded-md px-4 py-2 w-fit">
       Sign up
-    </button>
+    </a>
 
     <select class="bg-transparent outline-none w-fit">
       <option>EN</option>
@@ -85,54 +85,55 @@
       <!-- <div class="space-y-16 w-full mt-4 relative z-10"></div> -->
 
       <!-- hero section -->
-      <main class="relative z-10 flex flex-col md:flex-row justify-between items-center gap-12 w-full">
-        <div class="space-y-7 w-full md:w-[50%] lg:w-[45%] text-center md:text-left">
-          <p class="text-[#df6951] font-bold poppins-700 text-sm md:text-lg">
+      <main class="relative z-10 flex flex-col md:flex-row justify-between items-center space-x-4 space-y-8 w-full shrink-0">
+        <div class="space-y-7 w-full md:w-[55%] lg:w-[45%] text-center md:text-left">
+          <p class="text-[#df6951] font-bold font-poppins  text-md md:text-[14px]">
             BEST DESTINATIONS AROUND THE WORLD
           </p>
            <div class="relative text-slate-900 font-bold font-volkhov text-4xl  lg:text-6xl leading-tight">
-            <h2>Travel, <span class="relative inline-block">enjoy<img src="images/line.png" alt="underline" class="absolute left-0  bottom-[-4px] w-full  z-[-1]" /></span></h2>
+            <h2>Travel, <span class="relative inline-block">enjoy<img src="images/line.png" alt="underline" class="absolute left-1/3  -translate-x-1/3 -bottom-[6px] w-[145%] max-w-none h-[10px] object-fill z-[-1]" /></span></h2>
             <h2>and live a new</h2>
             <h2 >and full life</h2>
            </div>
-          <p class="text-[#5e6282] font-poppins text-medium text-center md:text-left leading-relaxed ">
+          <p class="text-slate-500 text-medium font-semibold font-poppins leading-relaxed text-center md:text-left mx-auto md:mx-0 max-w-md md:max-w-none px-6 md:px-0">
             Built Wicket longer admire do barton vanity itself do in it.
             Preferred to sportsmen it engrossed listening. Park gate sell they
             west hard for the.
           </p>
 
-          <div class="flex sm:flex-col md:flex-row items-center justify-center md:justify-start gap-6 pt-2 ">
+          <div class="flex flex-col md:flex-row items-center justify-center md:justify-start gap-6 pt-2 ">
             <button
-              class="text-white font-medium border bg-yellow-400 rounded-md py-2 px-3 hover:bg-yellow-600 transition duration-500 ease-in-out"
+              class="w-fit whitespace-nowrap text-white font-medium border bg-yellow-400 rounded-2xl py-3 px-6 hover:bg-yellow-600 transition duration-500 ease-in-out"
             >
               Find out more
             </button>
-            <button class="flex items-center space-x-3 sm:space-x-3 md:space-x-2  lg:space-x-4">
+            <button class="flex items-center gap-4 lg:gap-6 min-w-max flex-nowrap">
               <!-- <span class="text-white border bg-red-400 rounded-full p-2 hover:bg-red-600 transition duration-500 ease-in-out">▶</span> -->
               <div
-                class="bg-red-400 w-10 h-10 rounded-full flex items-center justify-center hover:bg-red-600 transition duration-500 ease-in-out"
+                class="bg-red-400 w-12 h-12 rounded-full flex items-center justify-center hover:bg-red-600 transition duration-500 ease-in-out"
               >
-                <div
+                 <div
                   class="w-0 h-0 border-t-[8px] border-t-transparent border-l-[12px] border-l-white border-b-[8px] border-b-transparent"
-                ></div>
+                ></div> 
+                
               </div>
-              <span class="text-gray-500 font-medium">Play Demo</span>
+              <span class="text-gray-500 font-medium whitespace-nowrap">Play Demo</span>
             </button>
           </div>
         </div>
 
-        <div class="w-full md:w-[50%] lg:w-[55%] flex justify-center md:justify-end items-center relative">
+        <div class="w-full md:w-[45%] lg:w-[55%] flex justify-center md:justify-end items-center relative">
           <!-- <img src="images/Decore.png" alt="Decore "> -->
-          <img src="images/girl.png" alt="Travel" class="w-full h-auto max-w-3xl  object-contain origin-right transform md:scale-110 lg:scale-100" />
+          <img src="images/girl.png" alt="Travel" class="w-full h-auto  object-contain origin-right transform md:scale-110 lg:scale-100" />
         </div>
       </main>
       <!-- hero section close -->
 
       <!-- category section -->
-      <article class="flex flex-col justify-center items-center space-y-16">
+      <!-- <article class="flex flex-col justify-center items-center space-y-16">
         <div class="text-center space-y-2">
           <p class="text-gray-500 uppercase font-medium">Category</p>
-          <h1 class="text-4xl font-serif font-bold">We Offer Best Services</h1>
+          <h1 class=" text-2xl font-serif font-bold ">We Offer Best Services</h1>
         </div>
 
         <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
@@ -158,7 +159,7 @@
               />
             </div>
             <div
-              class="relative z-10 bg-white flex flex-col items-center text-center space-y-3 p-8 shadow-2xl rounded-tr-[36px] rounded-tl-[36px] rounded-br-[36px] rounded-bl-[50px] transition-all duration-500 ease-in-out"
+              class="relative z-10 bg-white flex flex-col items-center text-center space-y-3 p-8  rounded-tr-[36px] rounded-tl-[36px] rounded-br-[36px] rounded-bl-[50px] transition-all duration-500 ease-in-out"
             >
               <img
                 src="images/image3.png"
@@ -197,6 +198,104 @@
               We deliver outsourced aviation services for military customers
             </p>
           </div>
+        </section>
+      </article> -->
+
+      <article class="flex flex-col justify-center items-center space-y-16">
+        <div class="text-center space-y-2">
+          <p class="text-gray-500 uppercase font-medium">Category</p>
+          <h1 class="sm:text-3xl md:text-4xl font-serif font-bold">We Offer Best Services</h1>
+        </div>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 sm:gap-2 md:gap-6 w-full ">
+          
+          <div class="relative group w-full h-full ">
+            <div>
+              <img
+                src="images/red.png"
+                class="absolute -bottom-5 -left-5 z-0 w-24 opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out pointer-events-none"
+              />
+            </div>
+            <div
+              class="relative z-10 bg-white flex flex-col items-center text-center space-y-3 p-8 hover:shadow-2xl rounded-tr-[36px] rounded-tl-[36px] rounded-br-[36px] rounded-bl-[50px] w-full h-full min-h-[320px] transition-all duration-500 ease-in-out"
+            >
+              <img
+                src="images/image2.png"
+                alt="image2"
+                class="h-20 object-contain"
+              />
+              <h1 class="text-xl font-medium text-slate-800 whitespace-nowrap">
+                Calculated Weather
+              </h1>
+              <p class="text-lg font-meium text-slate-700">Built Wicket longer admire do barton vanity itself do in it.</p>
+            </div>
+          </div>
+
+          <div class="relative group w-full h-full">
+            <div>
+              <img
+                src="images/red.png"
+                class="absolute -bottom-5 -left-5 z-0 w-24 opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out pointer-events-none"
+              />
+            </div>
+            <div
+              class="relative z-10 bg-white flex flex-col items-center text-center space-y-3 p-8 hover:shadow-2xl rounded-tr-[36px] rounded-tl-[36px] rounded-br-[36px] rounded-bl-[50px] w-full h-full min-h-[320px] transition-all duration-500 ease-in-out"
+            >
+              <img
+                src="images/image3.png"
+                alt="image3"
+                class="h-20 object-contain"
+              />
+              <h1 class="text-xl font-medium text-slate-800">Best Flights</h1>
+              <p class="text-lg font-meium text-slate-700">Engrossed listening. Park gate sell they west hard for the.</p>
+            </div>
+          </div>
+
+          <div class="relative group w-full h-full">
+            <div>
+              <img
+                src="images/red.png"
+                class="absolute -bottom-5 -left-5 z-0 w-24 opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out pointer-events-none"
+              />
+            </div>
+            <div
+              class="relative z-10 bg-white flex flex-col items-center text-center space-y-3 p-8 hover:shadow-2xl rounded-tr-[36px] rounded-tl-[36px] rounded-br-[36px] rounded-bl-[50px] w-full h-full min-h-[320px] transition-all duration-500 ease-in-out"
+            >
+              <img
+                src="images/image4.png"
+                alt="image4"
+                class="h-20 object-contain"
+              />
+              <h1 class="text-xl font-medium text-slate-800">Local Events</h1>
+              <p class="text-lg font-meium text-slate-700">
+                Barton vanity itself do in it. Preferd to men it engrossed
+                listening.
+              </p>
+            </div>
+          </div>
+
+          <div class="relative group w-full h-full">
+            <div>
+              <img
+                src="images/red.png"
+                class="absolute -bottom-5 -left-5 z-0 w-24 opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out pointer-events-none"
+              />
+            </div>
+            <div
+              class="relative z-10 bg-white flex flex-col items-center text-center space-y-3 p-8 hover:shadow-2xl rounded-tr-[36px] rounded-tl-[36px] rounded-br-[36px] rounded-bl-[50px] w-full h-full min-h-[320px] transition-all duration-500 ease-in-out"
+            >
+              <img
+                src="images/image5.png"
+                alt="image5"
+                class="h-20 object-contain"
+              />
+              <h1 class="text-xl font-medium text-slate-800">Customization</h1>
+              <p class="text-lg font-meium text-slate-700">
+                We deliver outsourced aviation services for military customers
+              </p>
+            </div>
+          </div>
+
         </section>
       </article>
       <!-- category section close -->
@@ -283,43 +382,51 @@
       <!-- book section -->
 
       <!-- book section close -->
-      <article class="w-full flex flex-col md:flex-row justify-center items-center gap-16 ">
-        <div class="w-full md:w-[50%] space-y-8">
-          <div class="space-y-4 text-center md:text-left">
+      <article class="w-full flex flex-col md:flex-col lg:flex-row justify-center  items-center md:items-start gap-16 ">
+        <div class="w-full lg:w-[50%] space-y-4">
+          <div class="space-y-2 text-center md:text-left">
           <span class="text-slate-500 font-bold">Easy and Fast</span>
-          <h1 class="text-slate-800 text-4xl font-extrabold ">Book Your Next Trip In 3 Easy Steps</h1>
+          <h1 class="text-slate-800 text-[35px] md:text[35px] font-volkhov font-bold block">Book Your Next Trip </h1>
+          <h1 class="text-slate-800 text-[40px] font-volkhov font-bold block">In 3 Easy Steps</h1>
          </div>
-         <div class=" flex flex-col justify-center items-center space-y-6">
+         <div class=" flex flex-col items-center text-center md:flex-row md:text-left space-y-4 space-x-4">
             <div class="flex space-x-4" >
-            <img src="images/image6.png" alt="image6" class="w-16 h-14 object-contain shrink-0">
-            <div class="flex flex-col space-y-2">
+               <img src="images/image6.png" alt="image6" class="w-14 h-12 object-contain shrink-0">
+            </div>
+            <!-- <img src="images/image6.png" alt="image6" class="w-16 h-14 object-contain shrink-0"> -->
+            <div class="flex flex-col ">
               <h1 class="text-slate-600 font-bold">Choose Destination</h1>
             <p class="text-md text-slate-500 font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Urna, tortor tempus.</p>
             </div>
+          </div>
+            <div class=" flex flex-col items-center text-center md:flex-row md:text-left space-y-6 space-x-4">
+            <div class="flex space-x-4" >
+               <img src="images/image7.png" alt="image6" class="w-14 h-12 object-contain shrink-0">
             </div>
-            <div class="flex space-x-4">
-            <img src="images/image7.png" alt="image7" class="w-16 h-14 object-contain shrink-0">
-            <div class="flex flex-col space-y-2">
+            <!-- <img src="images/image6.png" alt="image6" class="w-16 h-14 object-contain shrink-0"> -->
+            <div class="flex flex-col ">
               <h1 class="text-slate-600 font-bold">Make Payment</h1>
             <p class="text-md text-slate-500 font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Urna, tortor tempus.</p>
             </div>
+          </div>
+            <div class=" flex flex-col items-center text-center md:flex-row md:text-left space-y-6 space-x-4">
+            <div class="flex space-x-4" >
+               <img src="images/image8.png" alt="image6" class="w-14 h-12 object-contain shrink-0">
             </div>
-            <div class="flex space-x-4">
-            <img src="images/image8.png" alt="image8" class="w-16 h-14 object-contain shrink-0">
-            <div class="flex flex-col space-y-2">
+            <!-- <img src="images/image6.png" alt="image6" class="w-16 h-14 object-contain shrink-0"> -->
+            <div class="flex flex-col">
               <h1 class="text-slate-600 font-bold">Reach Airport on Selected Date</h1>
-              <!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur officia, sapiente ipsum repellat ducimus in fugiat corrupti delectus error, laborum molestiae eaque rem vero veritatis accusamus inventore odio reprehenderit placeat. -->
-              <p class="text-md text-slate-500 font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Urna, tortor tempus.</p>
-            </div>
+            <p class="text-md text-slate-500 font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Urna, tortor tempus.</p>
             </div>
           </div>
+          </div>
         </div>
-        
+        <!-- Reach Airport on Selected Date -->
         <!-- <div class="w-full md:w-1/2 flex justify-end pl-4">
           <img src="images/book.png" alt="book" class="w-full h-auto object-contain">
         </div> -->
 
-        <div class="w-full md:w-[50%] flex justify-center md:justify-end items-start relative pr-0 md:pr-12 pt-4 overflow-visible">
+        <div class="w-full lg:w-[50%] flex justify-center lg:justify-end items-center relative pr-0 md:pr-12 pt-4 lg:mt-16 overflow-visible">
             
             <!-- <div class="absolute -top-10 right-10 w-60 h-60 bg-blue-900/90 rounded-full filter blur-3xl -z-10"></div> -->
             <!-- <div class="absolute top-1/2 left-1/2 md:left-auto md:right-1/4 -translate-y-1/2 -translate-x-1/2 md:translate-x-0 w-72 h-72 bg-purple-500/80 rounded-full filter blur-3xl -z-10 pointer-events-none"></div> -->
@@ -388,51 +495,8 @@
       </article>
 
       <!-- about us section -->
-      <!-- <div class="w-full flex flex-col md:flex-row justify-center items-center gap-16">
-        <div class="w-full md:w-[45%] space-y-12 ">
-          <div class="space-y-4 text-center md:text-left">
-            <span class="text-slate-500 font-bold uppercase">Testimonials</span>
-            <h1 class="text-slate-800 text-4xl font-extrabold">What People Say About Us.</h1>
-          </div>
-          <div class="flex justify-center lg:justify-start">
-            <img src="images/group1.png" alt="group">
-          </div>
-        </div>
-        
-         <div class="w-full md:w-[55%] max-w-[520px] h-auto relative flex flex-row items-center justify-center md:justify-end gap-4 md:gap-16 py-10 overflow-visible">
-          
-              <div class="relative flex-1 min-w-0">
-
-                
-                <div class="absolute -bottom-16 -right-6 w-full  bg-slate-50/30 space-y-8 rounded-xl border-slate-100/20  shadow-xl p-4 z-0">
-                  <p class="text-slate-500 text-base font-medium leading-relaxed">"On the Windows talking painted pasture yet its express parties use. Sute last upon he same as knew next. Of believed or diverted no."</p>
-                  <div class="">
-                    <h3 class="text-slate-500 text-lg font-bold">Chris Thomas</h3>
-                    <p class="text-slate-500 text-base font-medium">CEO of Red Button</p>
-                </div>
-              </div>
-              
-
-              <div class="relative w-full z-10 bg-white space-y-8 p-4 rounded-xl border border-slate-100/40">
-                <div class="absolute -top-6 -left-7 w-18 h-18 rounded-full overflow-hidden border-2 border-white">
-                  <img src="images/man.png" alt="man" class="w-16 h-16 object-cover">
-                </div>
-                <p class="text-slate-500 text-base font-medium leading-relaxed">"On the Windows talking painted pasture yet its express parties use. Sute last upon he same as knew next. Of believed or diverted no."</p>
-                <div class="gap-2">
-                  <h3 class="text-slate-500 text-lg font-bold">Mike taylor</h3>
-                  <p class="text-slate-500 text-base font-medium">Lahore, Pakistan</p>
-                </div>
-              </div>
-             </div>
-            </div>
-          
-
-               
-              <div class=" shrink-0 self-center"> 
-              <img src="images/Pagination.png" alt="arrow" class="w-3 md:w-4 h-auto object-contain cursor-pointer transition hover:opacity-80">
-              </div> 
-            </div>
-            -->
+       
+            
       
 
             <!-- <div class="w-full flex flex-col md:flex-row justify-center items-center gap-16">
@@ -493,23 +557,23 @@
 
 </div>  -->
 
-        <div class="w-full flex flex-col md:flex-row justify-center items-center gap-16 px-4 md:px-0">
+      <div class="w-full flex flex-col md:flex-row justify-center items-center gap-8 px-4 md:px-0">
   
-  <div class="w-full md:w-[45%] space-y-12">
-    <div class="space-y-4 text-center md:text-left">
-      <span class="text-slate-500 font-bold uppercase">Testimonials</span>
-      <h1 class="text-slate-800 text-4xl font-extrabold">What People Say About Us.</h1>
-    </div>
-    <div class="flex justify-center lg:justify-start">
-      <img src="images/group1.png" alt="group">
-    </div>
-  </div>
+        <div class="w-full md:w-[40%] space-y-12">
+         <div class="space-y-4 text-center md:text-left">
+            <span class="text-slate-500 font-bold uppercase">Testimonials</span>
+              <h1 class="text-slate-800 text-4xl font-extrabold">What People Say About Us.</h1>
+          </div>
+        <div class="flex justify-center lg:justify-start">
+          <img src="images/group1.png" alt="group">
+        </div>
+        </div>
   
-  <div class="w-full md:w-[55%] max-w-[520px] flex flex-row items-center justify-between md:justify-end gap-6 md:gap-12 py-10 overflow-visible relative">
+  <div class="w-full md:w-[60%] max-w-[800px] flex flex-row items-center justify-between  gap-6 md:gap-12 py-10 overflow-visible relative">
     
     <div class="relative flex-1 min-w-0">
 
-      <div class="absolute -bottom-12 -right-4 md:-bottom-16 md:-right-6 w-full bg-slate-50/30 space-y-4 md:space-y-8 rounded-xl border border-slate-100/20 shadow-xl p-4 z-0">
+      <!-- <div class="absolute -bottom-12 -right-4 md:-bottom-16 md:-right-6 w-full bg-slate-50/30 space-y-4 md:space-y-8 rounded-xl border border-slate-100/20 shadow-xl p-4 z-0">
         <p class="text-slate-500 text-sm md:text-base font-medium leading-relaxed">
           "On the Windows talking painted pasture yet its express parties use. Sute last upon he same as knew next. Of believed or diverted no."
         </p>
@@ -517,10 +581,10 @@
           <h3 class="text-slate-500 text-base md:text-lg font-bold">Chris Thomas</h3>
           <p class="text-slate-500 text-sm md:text-base font-medium">CEO of Red Button</p>
         </div>
-      </div>
+      </div> -->
 
       <div class="relative w-full z-10 bg-white space-y-6 md:space-y-8 p-4 rounded-xl border border-slate-100/40 shadow-md">
-        <div class="absolute -top-6 -left-4 md:-left-7 w-12 h-12 md:w-16 md:h-16 rounded-full overflow-hidden border-2 border-white shadow-sm">
+        <div class="absolute -top-6 -left-4 md:-left-7 w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden border-2 border-white shadow-sm">
           <img src="images/man.png" alt="man" class="w-full h-full object-cover">
         </div>
 
@@ -548,8 +612,8 @@
       <!-- about us section close -->
 
       <!-- logo section -->
-      <div class="w-full max-w-6xl ">
-        <div class="mx-auto flex flex-wrap md:flex-nowrap justify-center md:justify-between items-center gap-8 md:gap-4">
+      <div class="w-full max-w-6xl">
+        <div class="mx-auto flex flex-wrap md:flex-nowrap justify-center md:justify-between  items-center gap-8 md:gap-4">
         <img 
           src="images/axon.png"
           alt="Axon"
@@ -564,13 +628,13 @@
         >
 
     <!-- Expedia -->
-        <div class="bg-slate-50 px-8 rounded-xl shadow-xl">
+        <!-- <div class="bg-slate-50 px-8 rounded-xl shadow-xl"> -->
           <img 
             src="images/exp.png"
             alt="Expedia"
-            class="h-20 object-contain"
+            class="h-20 object-contain grayscale opacity-70 rounded-xl hover:opacity-100 hover:grayscale-0 transition duration-500 cursor-pointer"
           >
-        </div>
+        <!-- </div> -->
 
     <!-- Qantas -->
         <img 
@@ -603,14 +667,19 @@
             </div>
 
             <div class="flex flex-col justify-center items-center text-center max-w-lg space-y-8 md:space-y-16 w-full z-10 px-4">
-              <h2 class="text-xl md:text-2xl font-semibold text-slate-500 max-w-2xl ">Subscribe to get information, latest news and other interesting offers about Jadoo</h2>
+              <div>
+                <h2 class="text-lg md:text-3xl font-semibold text-slate-500 max-w-2xl ">Subscribe to get information,</h2>
+                <h2 class="text-lg md:text-3xl font-semibold text-slate-500 max-w-2xl ">latest news and other interesting</h2>
+                <h2 class="text-lg md:text-3xl font-semibold text-slate-500 max-w-2xl ">offers about Jadoo</h2>
+              </div>
+              
 
-              <div class="flex justify-center items-center gap-6 w-full max-w-lg">
+              <div class="flex flex-col md:flex-row justify-center items-center gap-6 w-full max-w-lg">
                 <div class="flex justify-center items-center space-x-3 bg-white h-12 px-5 w-full border rounded-lg border-slate-100">
                   <img src="images/email.png" alt="email" class="h-4">
                   <input type="email" placeholder="Your email" class="w-full bg-transparent text-sm text-slate-700 outline-none placeholder:text-slate-600 font-mono">
                 </div>
-                <button class="bg-orange-600 text-white text-base px-6 py-3 rounded-lg hover:bg-red-800 transition duration-300 ease-in-out">Subscribe</button>
+                <button class=" bg-orange-600 text-white text-base px-6 py-3 rounded-lg hover:bg-red-800 transition duration-300 ease-in-out">Subscribe</button>
             </div>
           </div>
         </div>
@@ -619,94 +688,79 @@
    <!-- contact section close -->
 
    <!-- footer section -->
-      <footer class="w-full  pb-12">
-
-        <div class="max-w-6xl mx-auto space-y-16">
-          <div class="grid grid-cols-1 md:grid-cols-[auto_auto_auto_auto_auto]  gap-6 justify-between items-start">
-          <div class="space-y-4 flex flex-col text-center md:text-left">
-          <h1 class="text-4xl font-bold text-slate-700" >Jadoo.</h1>
-          <p class="text-sm text-slate-500 font-medium leading-relaxed max-w-[180px] mx-auto">Book your trip in minute, get full Control for much longer.</p>
-        </div>
-
-        <!-- <div class="flex gap-4"> -->
-          <div class="space-y-4 text-center">
-            <h4 class="text-xl font-bold">Company</h4>
-            <ul class="text-md font-medium text-slate-600 space-y-2">
-              <li> <a href="">About</a></li>
-               <li><a href="">Careers</a></li>
-               <li><a href="">Mobile</a></li> 
-                
-              
-            </ul>
-          </div>
-
-          <div class="space-y-4 text-center">
-            <h4 class="text-xl font-bold">Contact</h4>
-            <ul class="text-md font-medium text-slate-600 space-y-2">
-              
-                 <li> <a href="">Help/FAQ</a></li>
-               <li><a href="">Press</a></li>
-               <li><a href="">Affilates</a></li> 
-              
-            </ul>
-          </div>
-
-          <div class="space-y-4 text-center">
-            <h4  class="text-xl font-bold">More</h4>
-            <ul class="text-md font-medium text-slate-600 space-y-2">
-              
-                 <li> <a href="">Airlinefees</a></li>
-               <li><a href="">Airline</a></li>
-               <li><a href="">Law fare tips</a></li> 
-              
-            </ul>
-          </div>
-        <!-- </div> -->
-
-        <div class="flex flex-col items-center md:items-start justify-start space-y-6">
-          <div class="flex items-center gap-3">
-            <a href=""><img src="images/facebook.png" alt="facebook" class="w-10 h-10 object-contain"></a>
-            <a href=""><img src="images/instagram.png" alt="instagram" class="w-10 h-10 object-contain"></a>
-            <a href=""><img src="images/twitter.png" alt="twitter" class="w-10 h-10 object-contain"></a>
-          </div>
-
-          <div class="flex flex-col items-center md:items-start gap-4">
-            <p class="text-slate-600 text-xl font-medium">Discover our app</p>
-            <div class="flex gap-2 items-center w-full">
-              <button class="flex  items-center bg-black rounded-full px-2.5 py-1.5 w-[112px] h-[35px] gap-2">
-                <a href=""><img src="images/play.png" alt="play" class="w-3.5 h-3.5 object-contain "></a>
-                <div class="flex flex-col text-left">
-                  <!-- <p class="text-white text-lg uppercase font-bold leading-tight">Get it on</p> -->
-                   <p class="text-[8px] uppercase tracking-wider text-white font-bold leading-none">Get it on</p>
-                  <!-- <p class="text-white uppercase text-xs font-light leading-tight">Google play</p> -->
-                   <p class="text-[10px] font-light tracking-wide uppercase text-slate-100/50 leading-tight whitespace-nowrap">Google play</p>
-                </div>
-              </button>
-
-              <button class="flex  items-center bg-black rounded-full px-2.5 py-1.5 w-[112px] h-[35px] gap-2">
-                <a href=""><img src="images/apple.png" alt="apple" class="w-3.5 h-3.5 object-contain"></a>
-                <div class="flex flex-col text-left">
-                  <!-- <p class="text-white  font-bold text-xs">Availble on the</p>
-                  <p class="text-white text-lg font-bold">Apple Store</p> -->
-
-                  <span class="text-[6px]  tracking-wider text-white font-bold leading-none">Availble on the</span>
-                  <span class="text-[10px] font-extrabold text-white tracking-wide leading-tight whitespace-nowrap">Apple Store</span>
-                </div>
-              </button>
-              
-              
-            </div>
-          </div>
-        </div>
-
-        </div>
+       <footer class="w-full pb-12">
+  <div class="max-w-6xl mx-auto space-y-16">
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 justify-between items-start">
       
-       <div class="text-center">
-          <p class="text-md font-medium text-slate-600 font-sans">All rights reserved@jadoo.co</p>
-        </div> 
+      <div class="order-1 space-y-4 flex flex-col text-center md:text-left md:row-start-2 md:col-start-1 lg:row-start-auto lg:col-start-1">
+        <h1 class="text-4xl font-bold text-slate-700">Jadoo.</h1>
+        <p class="text-sm text-slate-500 font-medium leading-relaxed max-w-[180px] mx-auto md:mx-0">Book your trip in minute, get full Control for much longer.</p>
+      </div>
+
+      <div class="order-2 space-y-4 text-center md:text-left">
+        <h4 class="text-xl font-bold">Company</h4>
+        <ul class="text-md font-medium text-slate-600 space-y-2">
+          <li><a href="">About</a></li>
+          <li><a href="">Careers</a></li>
+          <li><a href="">Mobile</a></li> 
+        </ul>
+      </div>
+
+      <div class="order-3 space-y-4 text-center md:text-left">
+        <h4 class="text-xl font-bold">Contact</h4>
+        <ul class="text-md font-medium text-slate-600 space-y-2">
+          <li><a href="">Help/FAQ</a></li>
+          <li><a href="">Press</a></li>
+          <li><a href="">Affilates</a></li> 
+        </ul>
+      </div>
+
+      <div class="order-4 space-y-4 text-center md:text-left">
+        <h4 class="text-xl font-bold">More</h4>
+        <ul class="text-md font-medium text-slate-600 space-y-2">
+          <li><a href="">Airlinefees</a></li>
+          <li><a href="">Airline</a></li>
+          <li><a href="">Law fare tips</a></li> 
+        </ul>
+      </div>
+
+      <div class="order-5 flex flex-col items-center justify-center space-y-4 md:row-start-2 md:col-start-3 md:col-span-1 lg:row-start-auto lg:col-start-auto lg:col-span-1">
+        <div class="flex items-center gap-3">
+          <a href=""><img src="images/facebook.png" alt="facebook" class="w-12 h-12 object-contain"></a>
+          <a href=""><img src="images/instagram.png" alt="instagram" class="w-12 h-12 object-contain"></a>
+          <a href=""><img src="images/twitter.png" alt="twitter" class="w-12 h-12 object-contain"></a>
         </div>
-        
-      </footer>
+
+        <div class="flex flex-col items-center gap-4 w-full">
+          <p class="text-slate-600 text-xl font-medium">Discover our app</p>
+          <div class="flex gap-2  items-center w-full justify-center pr-6">
+            <button type="button" class="flex items-center bg-black rounded-full px-4 py-2 gap-2 min-w[135px]">
+              <img src="images/play.png" alt="play" class="w-3.5 h-3.5 object-contain">
+              <div class="flex flex-col text-left">
+                <p class="text-[8px] uppercase tracking-wider text-white font-bold leading-none">Get it on</p>
+                <p class="text-[10px] font-light tracking-wide uppercase text-slate-100/50 leading-tight whitespace-nowrap">Google play</p>
+              </div>
+            </button>
+
+            <button type="button" class="flex items-center bg-black rounded-full px-4 py-2 gap-2 min-w[135px]">
+              <img src="images/apple.png" alt="apple" class="w-3.5 h-3.5 object-contain">
+              <div class="flex flex-col text-left ">
+                <span class="text-[6px] tracking-wider text-white font-bold leading-none">Availble on the</span>
+                <span class="text-[10px] font-extrabold text-white tracking-wide leading-tight whitespace-nowrap">Apple Store</span>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    
+    <div class="text-center">
+      <p class="text-md font-medium text-slate-600 font-sans">All rights reserved@jadoo.co</p>
+    </div> 
+  </div>
+</footer>
    <!-- footer section close -->
 
   
