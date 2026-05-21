@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Mobile Shop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-slate-200">
+    <!-- Main Container -->
+    <div class="flex relative min-h-screen overflow-x-hidden">
+      <!-- overlay -->
+      <div id="sidebarBackdrop" class="fixed inset-0 bg-black/40 z-40 hidden md:hidden"></div> 
+      <!-- Sidebar -->
+      <aside
+        id="sidebar"
+        class="fixed md:static top-0 left-0 z-50 bg-slate-900 w-56 h-screen text-white -translate-x-full md:translate-x-0 transiton duration-500 ease-in-out space-y-4"
+      >
+        <!-- logo -->
+        <div class="bg-black flex items-center border-b border-slate-800">
+          <h1 class="text-lg font-bold p-2">📱 MobileShop</h1>
+          <button
+            id="closeSidebar"
+            class="md:hidden text-slate-100 hover:text-white px-6 py-2"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- menu -->
+        <div class="space-y-4">
+          <p class="text-md uppercase text-slate-500 font-medium px-2">
+            Management
+          </p>
+          <nav class="text-md flex flex-col space-y-2 px-4">
+            <a href="" class="bg-fuchsia-500 p-2 rounded-lg">Dashbord</a>
+            <a href="" class="hover:bg-fuchsia-500 p-2 rounded-lg">Products</a>
+            <a href="" class="hover:bg-fuchsia-500 p-2 rounded-lg">Orders</a>
+            <a href="" class="hover:bg-fuchsia-500 p-2 rounded-lg">Users</a>
+          </nav>
+        </div>
+        <!-- logout -->
+        <div
+          class="absolute bottom-2 left-0 w-full border-t border-slate-800 p-4"
+        >
+          <button
+            class="w-full border border-slate-800 bg-slate-800 px-4 py-2 rounded-lg"
+          >
+            Logout
+          </button>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="flex-1 w-full space-y-8 min-w-0">
+        <header>
+          <div class="bg-white flex items-center gap-2">
+            <button
+              id="openSidebar"
+              class="md:hidden text-slate-600 focus:outline-none"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+            <h2 class="text-lg text-slate-600 font-medium py-2 pl-1 md:pl-4">
+              Dashboard
+            </h2>
+          </div>
+        </header>
+
+        <!-- cards -->
+        <section class="px-6 space-y-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="bg-white rounded-lg p-4 flex items-center gap-4">
+              <div class="bg-green-200 p-2 rounded-lg">
+                <!-- <img src="images/dollar.png" alt="dollar" class="w-6" /> -->
+                 💲
+              </div>
+              <div>
+                <p class="text-slate-500 font-medium">Total Sales</p>
+                <h1 class="text-xl font-bold">$0.00</h1>
+              </div>
+            </div>
+
+            <div class="bg-white rounded-lg p-4 flex items-center gap-4">
+              <div class="bg-blue-200 p-2 rounded-lg">
+                <!-- <img src="images/cart.png" alt="cart" class="w-6" /> -->
+                 🛒
+              </div>
+              <div>
+                <p class="text-slate-500 font-medium">Total Orders</p>
+                <h1 class="text-xl font-bold">0</h1>
+              </div>
+            </div>
+
+            <div class="bg-white rounded-lg p-4 flex items-center gap-4">
+              <div class="bg-purple-200 p-2 rounded-lg">
+                <!-- <img src="images/customer.png" alt="customer" class="w-6" /> -->
+                 👥
+              </div>
+              <div>
+                <p class="text-slate-500 font-medium">Customers</p>
+                <h1 class="text-xl font-bold">1</h1>
+              </div>
+            </div>
+
+            <div class="bg-white rounded-lg p-4 flex items-center gap-4">
+              <div class="bg-red-200 p-2 rounded-lg">
+                <!-- <img src="images/warning.png" alt="warning" class="w-6" /> -->
+                 ⚠️
+              </div>
+              <div>
+                <p class="text-slate-500 font-medium">Low Stock Items</p>
+                <h1 class="text-xl font-bold">0</h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-lg overflow-hidden">
+            <!-- recent orders -->
+            <div class="flex justify-between items-center p-5 border-b">
+              <h3 class="text-slate-600 font-medium">Recent Orders</h3>
+              <h3 class="text-pink-500 font-medium">View all >></h3>
+            </div>
+
+            <!-- table -->
+            <div class="overflow-x-auto">
+              <table class="w-full min-w-[500px] md:min-w-full">
+                <thead
+                  class="bg-gray-100 text-left text-xs text-slate-500 uppercase whitespace-nowrap"
+                >
+                  <tr>
+                    <th class="p-4">Order ID</th>
+                    <th class="p-4">Customer</th>
+                    <th class="p-4">Date</th>
+                    <th class="p-4">Total</th>
+                    <!-- <th class="p-4">Status</th> -->
+                    <th
+                      class="p-4 cursor-pointer select-none"
+                    >
+                      <div class="flex items-center justify-between w-full">
+                        <span>Status</span>
+                        <div class="flex flex-col text-slate-400">
+                          <span>▲</span>
+                          <span>▼</span>
+                        </div>
+                      </div>
+                    </th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script>
+      const sidebar = document.getElementById("sidebar");
+      const openSidebarBtn = document.getElementById("openSidebar");
+      const closeSidebarBtn = document.getElementById("closeSidebar");
+      const sidebarBackdrop = document.getElementById('sidebarBackdrop');
+
+      function toggleSidebar() {
+        sidebar.classList.toggle("-translate-x-full");
+              sidebarBackdrop.classList.toggle('hidden');
+      }
+
+      openSidebarBtn.addEventListener("click", toggleSidebar);
+      closeSidebarBtn.addEventListener("click", toggleSidebar);
+      sidebarBackdrop.addEventListener('click', toggleSidebar);
+    </script>
+  </body>
+</html>
